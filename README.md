@@ -367,7 +367,7 @@ The pinned versions in `requirements.txt` are tested to work together. If you se
 |---|---|---|
 | `langsmith` | `<0.3,>=0.1.17` | `langchain` 0.3.x requires `langsmith<0.3` |
 | `python-dotenv` | `>=1.1.1` | `deepeval>=3.8.9` requires `python-dotenv>=1.1.1` |
-| `guardrails-ai` | Installed from GitHub `@v0.6.0` | PyPI is quarantined (CVE-2026-45758). v0.6.0 is compatible with langchain 0.3.x (`langchain-core<0.4`). |
+| `guardrails-ai` | Installed from GitHub `@v0.10.0` | PyPI is quarantined due to a supply chain attack (CVE-2026-45758). v0.10.0 from GitHub is clean. |
 
 > **Tip**: `langchain-core` and `langchain-text-splitters` should **not** be pinned directly — they are resolved automatically as transitive dependencies of `langchain` and `langchain-openai`.
 
